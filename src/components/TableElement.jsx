@@ -5,7 +5,7 @@ export default function TableElement({milestone, onElementClick, monthId}) {
 
   return (
     <div className={hasDescription(milestone) ? 'has-value' : 'no-value'} onClick={() => onElementClick(milestone, monthId)}>
-      {hasDescription(milestone) ? milestone.description : 'brak'}
+      {hasDescription(milestone) ? milestone.description : '---'}
     </div>
   )
 }
